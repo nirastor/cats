@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сколько будет котов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="main-tile">Сколько будет котов</h1>  
+    <h2 class="title titltle-input">Вводные</h2>
+    <div class="input-row">
+        <label for="number-of-years">Через сколько лет</label>
+        <input type="number" class="input input-number-of-years" id="number-of-years" min="1" max="12" value="10" step="1">
+    </div>
+    <h2 class="title title-assumptions">Допущения</h2>
+    <ul class="assumptions">
+        <li class="assumption">В начале одна (1) кошка</li>
+        <li class="assumption">Три (3) потомства в год</li>
+        <li class="assumption">В потомстве (4) кошки и все девочки</li>
+        <li class="assumption">При этом котов магическим образом хватает</li>
+        <li class="assumption">Срок расчета 10 лет (включительно, считаем все потомство поледнего года)</li>
+        <li class="assumption">Выиваемость 100% (не учтено в модели)</li>
+        <li class="assumption">Продолжительсть жизни более 10 лет лет (в модели не ограничена)</li>
+        <li class="assumption">Репродуктивный возраст 2-10 лет (в модели не ограничен сверху)</li>
+        <li class="assumption">Количество родов подряд или в течении жизни неограничено</li>
+    </ul>
+    <h2 class="title title-result">Итог</h2>
+    <button class="btn-count" type="button">Посчитать</button>
+    <div class="result-as-text">
+        <p class="result-label">Результат: </p>
+        <p class="result">0</p>
+    </div>
+    <div class="result-graph">
+    </div>
+    <script src="js/cat-counter.js"></script>
+</body>
+</html>
